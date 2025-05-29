@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Car Pucallpa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-lg bg-transparent fixed-top border-bottom border-body " data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo.webp" alt="Logo" style="height: 50px" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Reservar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeriapaquetes">Galeria</a></li>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 search-box" type="search" placeholder="Buscar..." aria-label="Buscar" />
+          </form>
+          <a href="../app/index.php" class="btn btn-outline-light ms-2">Iniciar Sesión</a>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+
+  <!-- Carousel -->
+  <section>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/portada1.webp" class="d-block w-5" alt="Foto portada 1" />
+          <div class="carousel-caption text-start">
+            <p>La calidad que estabas buscando...</p>
+            <h1 class="animate__animated animate__fadeIn letras-animadas">LAVADO DE AUTOS<br />PREMIUM.</h1>
+            <a href="#" class="btn btn-reserva mt-3">Conocer más...</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Portada2.png" class="d-block w-5" alt="Foto portada 2" />
+          
+        </div>
+        <div class="carousel-item">
+          <img src="img/Portada3.png" class="d-block w-5" alt="Foto portada 3" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="mi-seccion animar-scroll animate__animated">  
+    <h2 class="mt-5 text-center ">SERVICIOS MÁS FRECUENTES</h2>
+    <div class="container mt-4">
+      <div class="row">     
+        <div class="col-lg-4 col-6 mb-4">
+          <div id="cardIzq" class="card">
+            <img src="img/section2-image1.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lavado Premium Autos</h5>
+              <p class="card-text">Standard &nbsp;&nbsp;&nbsp; S/60</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 mb-4">
+          <div id="cardCent" class="card">
+            <img src="img/section2-image2.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Proteccion Cerámica</h5>
+              <p class="card-text">Standard &nbsp;&nbsp;&nbsp; S/1200</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 mb-4">
+          <div id="cardDerc" class="card">
+            <img src="img/section2-image3.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Pintura Automotriz por paño</h5>
+              <p class="card-text">Standard &nbsp;&nbsp;&nbsp; S/400</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ceramic seccion -->
+  <section class="container-fluid ceramic-section mt-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 ceramic-content">
+          <h2 class="ceramic-title animate__animated animate__backInLeft animar-texto">
+            Ceramic Coating: Protección y Brillo Superior
+          </h2>
+          <p class="ceramic-description animate__animated animate__backInLeft animar-texto">
+            Este servicio avanzado crea una capa protectora sobre la pintura de tu vehículo, ayudando a repeler agua, rayones, polvo y los daños causados por el sol.
+          </p>
+          <div class="row g-3 ceramic-features">
+            <div class="col-12 col-md-6">
+              <div class="feature-box animate__animated animate__backInLeft animar-texto">
+                <h6>Duración Prolongada</h6>
+                <small>Disfruta de una protección duradera que perdura durante años.</small>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="feature-box animate__animated animate__backInLeft animar-texto">
+                <h6>Efecto Hidrofóbico</h6>
+                <small>Repele agua, lodo y suciedad con facilidad.</small>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="feature-box animate__animated animate__backInLeft animar-texto">
+                <h6>Protección UV</h6>
+                <small>Cuida la pintura del sol y agentes contaminantes.</small>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="feature-box animate__animated animate__backInLeft animar-texto">
+                <h6>Brillo Tipo Espejo</h6>
+                <small>Luce tu vehículo como recién salido del concesionario, todos los días del año.</small>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="ceramic-btn mt-4 d-inline-block animate__animated animate__backInLeft animar-texto">Más información</a>
+        </div>
+
+        <div class="col-md-6 text-end img-carvid">
+          <img  src="img/divCar.webp" alt="Auto con brillo cerámico "
+            class="img-fluid ceramic-img animate__animated animate__backInRight" id="imagen-animada" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION Paquetes de lavados-->
+  <section class="container-fluid py-5 bg-black text-white">
+    
+    <div class="container">
+      <h2 class="mb-4 text-center pb-2">NUESTROS PAQUETES DE LAVADOS </h2>
+      
+      <div class="row align-items-center border-red ">
+        <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+          <img src="img/lavado1.webp" alt="Auto rojo" class="img-fluid" style="max-height: 300px;">
+        </div>
+  
+        <div class="col-lg-8">
+          <h4 class="fw-bold">Lavado Básico: <span class="text-danger">Un paquete super económico y convencional</span></h4>
+          <p class="mb-4">Este servicio es convencional del Car Wash usando productos de calidad, sin el uso de siliconas ni sus derivados. Un servicio diseñado para clientes con tiempo limitado, sin dejar nuestro sello de calidad.</p>
+  
+          <div class="row">
+            <div class="col-md-4">
+              <div class="p-3 border border-danger rounded h-100">
+                <h6 class="text-danger">Limpieza Exterior Convencional</h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Lavado de carrocería</li>
+                  <li>✓ Lavado del chasis</li>
+                  <li>✓ Desempolvado del motor</li>
+                  <li>✓ Lavado de llantas</li>
+                  <li>✓ Lavado simple de aros</li>
+                  <li>✓ Limpieza de lunas, espejos y faros</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="p-3 border border-danger rounded h-100">
+                <h6 class="text-danger">Limpieza Interior Convencional</h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Limpieza de marco de puertas</li>
+                  <li>✓ Limpieza simple de tablero</li>
+                  <li>✓ Limpieza simple de consola central</li>
+                  <li>✓ Limpieza simple de puertas</li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="p-3 border border-danger rounded h-100">
+                <table>
+                    <tr class="text-danger">
+                      <th> </th>
+                      <th class="px-2">Standard</th>
+                      <th>Extremo</th>
+                    </tr>
+                    <tr class="small"><td>AUTOS</td><td class="text-center">S/ 30</td><td class="text-center">S/ 50</td></tr>
+                    <tr class="small"><td>SUV's</td><td class="text-center">S/ 40</td><td class="text-center">S/ 80</td></tr>
+                    <tr class="small"><td>SUV Larga</td><td class="text-center">S/ 50</td><td class="text-center">S/ 80</td></tr>
+                    <tr class="small"><td>PICK UP</td><td class="text-center">S/ 50</td><td class="text-center">S/ 80</td></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Botón -->
+          <div class="mt-4 text-end">
+            <a href="#reserva" class="btn btn-danger rounded-pill px-4">¡Reserva ya!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">    
+      <div class="row align-items-center flex-lg-row-reverse border-blue">
+        <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+          <img src="img/lavado2.webp" alt="Auto azul" class="img-fluid" style="max-height: 300px;">
+        </div>
+    
+        <div class="col-lg-8">
+          <h4 class="fw-bold">Lavado Premium: <span class="text-blue">Un paquete super econónico y convencional detallado</span></h4>
+          <p class="mb-4">Incluye procesos adicionales para revitalizar el interior y exterior del vehículo.</p>
+    
+          <div class="row">
+            <div class="col-md-4">
+              <div class="p-3 border border-blue rounded h-100"">
+                <h6 class="text-blue">Limpieza Exterior moderada</h6>
+                <ul class="list-unstyled small">
+                  <li>✓ lavado de carrocería, chasis, motor y llantas</li>
+                  <li>✓ Sellado rápido</li>
+                  <li>✓ Lavado profundo de llantas</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 border border-blue rounded h-100"">
+                <h6 class="text-blue">Limpieza interior detallada</h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Aspirado profundo</li>
+                  <li>✓ Hidratación de cuero</li>
+                  <li>✓ Limpieza de techos y tapicería</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 border border-blue rounded h-100">
+                <table>
+                  <thead>
+                    <tr class="text-blue">
+                      <th> </th>
+                      <th class="px-2">Standard</th>
+                      <th>Extremo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="small"><td>AUTOS</td><td class="text-center">S/ 30</td><td class="text-center">S/ 50</td></tr>
+                    <tr class="small"><td>SUV's</td><td class="text-center">S/ 40</td><td class="text-center">S/ 80</td></tr>
+                    <tr class="small"><td>SUV Larga</td><td class="text-center">S/ 50</td><td class="text-center">S/ 80</td></tr>
+                    <tr class="small"><td>PICK UP</td><td class="text-center">S/ 50</td><td class="text-center">S/ 80</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mt-custom text-end">
+            <a href="#reserva" class="btn btn-blue rounded-pill px-4">¡Reserva ya!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row align-items-center border-white">
+        <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+          <img src="img/lavado3.webp" alt="Auto blanco" class="img-fluid" style="max-height: 300px;">
+        </div>
+    
+        <div class="col-lg-8 text-white">
+          <h4 class="fw-bold">Lavado Premium: <span class="text-secondary">Más que solo limpieza</span></h4>
+          <p class="mb-4">Servicio de alta gama que incluye detalles minuciosos con productos especiales sin siliconas. Ideal para autos que buscan destacar sin perder elegancia ni protección.</p>
+    
+          <div class="row">
+            <div class="col-md-4">
+              <div class="p-3 border border-white-bg rounded text-white h-100">
+                <h6 class="text-white">Limpieza Exterior Detallada</h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Lavado de carrocería Premium</li>
+                  <li>✓ Detallado de aros</li>
+                  <li>✓ Lavado de chasis profundo</li>
+                  <li>✓ Aplicación de cera</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="p-3 border border-white-bg rounded text-white h-100">
+                <h6 class="text-white">Limpieza Interior Detallada</h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Aspirado completo</li>
+                  <li>✓ Detallado de tablero</li>
+                  <li>✓ Limpieza de alfombras</li>
+                  <li>✓ Limpieza profunda de asientos</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="p-3 border border-white-bg rounded text-white h-100">
+                <table >
+                  <thead>
+                    <tr class="text-white">
+                      <th>Tipo</th>
+                      <th>Standard</th>
+                      <th>Extremo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>AUTOS</td><td>S/ 70</td><td>S/ 100</td></tr>
+                    <tr><td>SUV's</td><td>S/ 90</td><td>S/ 130</td></tr>
+                    <tr><td>PICK UP</td><td>S/ 100</td><td>S/ 150</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mt-4 text-end">
+            <a href="#reserva" class="btn btn-white rounded-pill px-4">¡Reserva ya!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center flex-lg-row-reverse border-violet">
+        <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+          <img src="img/lavado4.webp" alt="Auto violeta" class="img-fluid" style="max-height: 300px;">
+        </div>
+    
+        <div class="col-lg-8 text-white">
+          <h4 class="fw-bold">Lavado Detallado Plus: <span class="text-violet">Protección completa y brillo intenso</span></h4>
+          <p class="mb-4">Incluye tratamientos especializados con acabados de larga duración. Ideal para quienes desean una limpieza exhaustiva con estética mejorada.</p>
+    
+          <div class="row">
+            <div class="col-md-4">
+              <div class="p-3 border border-violet rounded text-white h-100">
+                <h6 class="text-violet">Limpieza Exterior Superior</h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Lavado especial con espuma</li>
+                  <li>✓ Detallado con brochas</li>
+                  <li>✓ Encerado protector</li>
+                  <li>✓ Tratamiento UV</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="p-3 border border-violet rounded text-white h-100">
+                <h6 class="text-violet">Limpieza Interior Premium</h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Detallado profundo de todo el interior</li>
+                  <li>✓ Limpieza de aire acondicionado</li>
+                  <li>✓ Desodorización</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="p-3 border border-violet rounded text-white h-100">
+                <table >
+                  <thead>
+                    <tr class="text-violet">
+                      <th>Autos</th>
+                      <th>Standard</th>
+                      <th>Extremo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>AUTOS</td><td>S/ 100</td><td>S/ 140</td></tr>
+                    <tr><td>SUV's</td><td>S/ 130</td><td>S/ 180</td></tr>
+                    <tr><td>PICK UP</td><td>S/ 150</td><td>S/ 200</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mt-custom text-end">
+            <a href="#reserva" class="btn btn-violet rounded-pill ">¡Reserva ya!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+  <!-- SECCION Paquetes ceramic seccion -->
+  <section id="galeriapaquetes" class="container my-5">
+    <h2 class="text-center mb-4">Nuestros Paquetes de Cerámicos</h2>
+  
+    <div id="carouselPaquetesCeramicos" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="4000">
+  
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselPaquetesCeramicos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Paquete 1"></button>
+        <button type="button" data-bs-target="#carouselPaquetesCeramicos" data-bs-slide-to="1" aria-label="Paquete 2"></button>
+        <button type="button" data-bs-target="#carouselPaquetesCeramicos" data-bs-slide-to="2" aria-label="Paquete 3"></button>
+        <button type="button" data-bs-target="#carouselPaquetesCeramicos" data-bs-slide-to="3" aria-label="Paquete 4"></button>
+        <button type="button" data-bs-target="#carouselPaquetesCeramicos" data-bs-slide-to="4" aria-label="Paquete 5"></button>
+        <button type="button" data-bs-target="#carouselPaquetesCeramicos" data-bs-slide-to="5" aria-label="Paquete 6"></button>
+      </div>
+  
+      <!-- Slides -->
+      <div class="carousel-inner text-end">
+        <div class="carousel-item active">
+          <img src="img/ceramico1.webp" class="d-block img-ceramico mx-auto" alt="Paquete 1">
+          <p class="descripcion-imagen">Paquete de Protección cerámica 0KM</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/ceramico2.webp" class="d-block img-ceramico mx-auto" alt="Paquete 2">
+          <p class="descripcion-imagen">Paquete de Protección cerámica de 6 a 12 meses</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/ceramico3.webp" class="d-block img-ceramico mx-auto" alt="Paquete 3">
+          <p class="descripcion-imagen">Paquete de Protección Cerámico de 1 año</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/ceramico4.webp" class="d-block img-ceramico mx-auto" alt="Paquete 4">
+          <p class="descripcion-imagen">Paquete de Protección Cerámico de 2 años </p
+        </div>
+        <div class="carousel-item">
+          <img src="img/ceramico5.webp" class="d-block img-ceramico mx-auto" alt="Paquete 5">
+          <p class="descripcion-imagen">Paquete de Protección Cerámico de 3 años</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/ceramico6.webp" class="d-block img-ceramico mx-auto" alt="Paquete 6">
+          <p class="descripcion-imagen">Paquete de Protección Cerámico de 5 años</p>
+        </div>
+      </div>
+  
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPaquetesCeramicos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselPaquetesCeramicos" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>  
+
+  <section>
+    
+  </section>
+
+
+
+
+  
+
+  <!-- SECCION Footer -->
+  <section>
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/trace.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/gtechniq-seeklogo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/makita.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/rupes.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/41b6OcdwjGL.jpg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/trace.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/gtechniq-seeklogo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/makita.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/rupes.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/41b6OcdwjGL.jpg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/trace.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/gtechniq-seeklogo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/makita.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/rupes.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/41b6OcdwjGL.jpg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/trace.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/gtechniq-seeklogo.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/makita.svg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/rupes.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin: 0 15px;">
+          <img src="img/41b6OcdwjGL.jpg" height="100" width="250" alt="" />
+        </div>
+        
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SECCION Footer 2-->
+  <section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-logo">
+          <img src="img/logoRecortado.webp" alt="Super Car Pucallpa" />
+        </div>
+
+
+         <title>Ubicación</title>
+  <style>
+    section#mapa {
+      width: 100%;
+      height: 400px;
+    }
+    section#mapa iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="mapa">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.27334679755!2d-74.56122512581751!3d-8.374750484436916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a3bd6591ae187b%3A0xec056c8411093a79!2sPCL%20CAR!5e0!3m2!1ses-419!2spe!4v1748147452850!5m2!1ses-419!2spe" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4>Servicios</h4>
+            <ul>
+              <li>Lavado VIP</li>
+              <li>Motor impecable</li>
+              <li>Pintura como nueva</li>
+              <li>Cristales protegidos</li>
+              <li>Faros restaurados</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>La Empresa</h4>
+            <ul>
+              <li>Sobre nosotros</li>
+              <li>Reseñas</li>
+              <li>Área Premium</li>
+              <li>Preguntas frecuentes</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contáctanos</h4>
+            <ul>
+              <li>correo@supercar.com</li>
+              <li>Av. Central 456</li>
+              <li>Pucallpa - Perú</li>
+              <li>Tel: +123 456 7890</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Síguenos</h4>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>TikTok</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-payment">
+        <p>Métodos de pago</p>
+        <div class="payment-icons">
+          <img src="img/mastercard.svg" alt="Mastercard" />
+          <img src="img/paypal.svg" alt="Paypal" />
+          <img src="img/128px-Logo-bcp-vector.svg.png" alt="BCP" />
+          <img src="img/americaExpress.svg" alt="American Express" />
+          <img src="img/visa.svg" alt="Visa" />
+          <img src="img/BBVA_Continental_-_logo.png" alt="BBVA" />
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <p>© 2025 Autopile. Desarrollado y protegido por Grupo 4 303.</p>
+      </div>
+    </div>
+  </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="animate/animaciones.js"></script>
+</body>
+
+</html>
