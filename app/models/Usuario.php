@@ -37,6 +37,7 @@ class Usuario{
          return $cn->setEjecutionQuery($sql);
     }
 
+    
     // Funcion para editar clientes
     public function editar_usuarios($dni,$nombre,$apellido,$correo){
         //Inicializamos la conexion.php
