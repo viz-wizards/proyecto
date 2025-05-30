@@ -52,11 +52,10 @@ if (isset($_SESSION["usuario_sesion"])) {
             <table class="table table-hover table-responsive" style="background:#ffff">
               <tr>
                 <th>#</th>
-                <th>DNI</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Correo</th>
-                <th>Activo</th>
+                <th>DniClientes</th>
+                <th>NombreClientes</th>
+                <th>ApellidoClientes</th>
+                <th>CelularClientes</th>
               </tr>
               <tbody id="contenedor_datos">
                 <!-- aqui mostraremos los datos del cliente -->

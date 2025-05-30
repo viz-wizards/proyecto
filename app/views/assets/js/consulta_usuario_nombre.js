@@ -8,10 +8,10 @@ variable_dni.addEventListener("keyup", function (){
         console.log("El número es: " + this.value);
         // ******** INICIO DE AJAX ******** 
         $.ajax({
-            url: "../controllers/UsuarioConsultaController.php",
+            url: "../controllers/UsarioConsultaController.php",
             type: "GET",
             data: {
-                dniClientes_c: this.value
+                dni_c: this.value
             },
             success:function(respuesta){
                 console.log(respuesta);
@@ -19,10 +19,10 @@ variable_dni.addEventListener("keyup", function (){
                 variable_tabla.innerHTML = `
                                             <tr>
                                                 <td>#</td>
-                                                <td>${respuesta[0].dniClientes}</td>
-                                                <td>${respuesta[0].nombreClientes}</td>
-                                                <td>${respuesta[0].apellidoClientes}</td>
-                                                <td>${respuesta[0].celularClientes}</td>
+                                                <td>${respuesta[0].idUsuario}</td>
+                                                <td>${respuesta[0].nombre}</td>
+                                                <td>${respuesta[0].apellido}</td>
+                                                <td>${respuesta[0].telefono}</td>
                                             </tr>
                                             `
             }
