@@ -10,14 +10,14 @@ btnEditar.forEach(botonsito => {
     botonsito.addEventListener('click', function(){
         //  alert("Este boton es de editar")
          $('#modalEditar').modal('show') //Jquery codigo Modal
-         const inputDNIClientes = document.getElementById("dniClienetes");
-         const inputNombreClientes = document.getElementById("nombreClienets");
-         const inputApellidoClientes= document.getElementById("apellidoClientes");
-         const inputCelularClientes = document.getElementById("celularClientes");
-         inputDNIClientes.value = botonsito.dataset.dniClientes;
+         const inputIdUsuario = document.getElementById("id_Usuario");
+         const inputNombreClientes = document.getElementById("nombre");
+         const inputApellido= document.getElementById("apellido");
+         const inputTelefono = document.getElementById("telefono");
+         inputIdUsuario.value = botonsito.dataset.dni;
          inputNombreClientes.value = botonsito.dataset.name;
-         inputApellidoClientes.value = botonsito.dataset.lastname;
-         inputCelularClientes.value = botonsito.dataset.celularClientes;
+         inputApellido.value = botonsito.dataset.lastname;
+         inputTelefono.value = botonsito.dataset.telefono;
     });
 });
 
@@ -27,10 +27,10 @@ btnEliminar.forEach(botonsito => {
     botonsito.addEventListener('click', function(){
          $('#modalEliminar').modal('show') //Jquery codigo
          //Almacenamos en una variable llamada INPUTDNI
-         const inputDNIClientes = document.getElementById("idClientes");
-         const dni_de_persona = botonsito.dataset.dni;
+         const inputIdUsuario = document.getElementById("id_Usuario");
+         const id_de_persona = botonsito.dataset.dni;
          //Guardo el dni de la persona en elemento del html de INPUT DNI
-         inputDNI.value = dni_de_persona;
+         inputIdUsuario.value = id_de_persona;
         //  alert(dni_de_persona + " ___ " + inputDNI)
     });
 });
@@ -38,12 +38,12 @@ btnEliminar.forEach(botonsito => {
 /// boton de confirmar eliminacion del modal
 const btnEliminarConfirmar = document.querySelector("#btnEliminarCliente");
 btnEliminarConfirmar.addEventListener('click', function(){
-      const inputDNIClientes = document.getElementById("id_cliente").value;
+      const inputDNI = document.getElementById("id_cliente").value;
    // ============== INICIO DE AJAX CON JQUERY ======================== //
             $.ajax({
-                url: '../controllers/ClienteEliminarController.php',
+                url: '../controllers/UsuarioEliminarController.php',
                 type: 'POST',
-                data: {dniClientes_c : inputDNIClientes},
+                data: {idUsuario_c: inputDNI},
                 success: function(respuesta){
                     if(respuesta === "yes"){
                         alert("ELIMINACION CORRECTA");
@@ -59,19 +59,19 @@ btnEliminarConfirmar.addEventListener('click', function(){
 //boton de confirmar actualizacion del modal
 const btnActualizarConfirmar = document.querySelector("#btnEditarCliente");
 btnActualizarConfirmar.addEventListener('click', function(){
-         const inputDNIClientes = document.getElementById("dni");
-         const inputNombreClientes = document.getElementById("nombre");
-         const inputApellidoClientes= document.getElementById("apellido");
-         const inputCelularClientes = document.getElementById("email");
+         const inputIdUsuario = document.getElementById("dni");
+         const inputNombre = document.getElementById("nombre");
+         const inputApellido= document.getElementById("apellido");
+         const inputTelefono = document.getElementById("telefono");
        // ============== INICIO DE AJAX CON JQUERY ======================== //
             $.ajax({
-                url: '../controllers/ClienteEditarController.php',
+                url: '../controllers/UsuarioEditarController.php',
                 type: 'POST',
                 data: {
-                        dniClientes_c : inputDNIClientes.value,
-                        name_c : inputNombreClientes.value,
-                        apellidoClientes_c : inputApellidoClientes.value,
-                        celularClientes_c : inputCelularClientes.value,
+                        idUsuario_c_ : inputIdUsuario.value,
+                        name_c : inputNombre.value,
+                        apellido_c : inputApellido.value,
+                        telefono_c : inputTelefono.value,
                       },
                 success: function(respuesta){
                     if(respuesta === "yes"){

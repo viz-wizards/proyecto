@@ -4,8 +4,8 @@ require_once("../models/Clientes.php");
 //Inicializamos el objeto de la clase Clientes.php
 $objeto = new Clientes();
 //Hacemos una condicional si existe el GET['dni_c']
-if(isset($_GET['dni_c'])){
-    $variable_dni = $_GET['dni_c']; //almacenamos en una variable el dato GET
+if(isset($_GET['dniClientes_c'])){
+    $variable_dniClientes = $_GET['dniClientes_c']; //almacenamos en una variable el dato GET
     //Almacenamos la funcion en la variable $resultado_lista
     $resultado_lista = $objeto->consultar_dni_cliente($variable_dni); 
 

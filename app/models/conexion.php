@@ -11,7 +11,7 @@ class Conexion{
         $this->servidor = "localhost";
         $this->user = "root";
         $this->clave = "";
-        $this->database = "Carwash_db";
+        $this->database = "carwash_db";
     }
     //Destructor
     public function __destruct(){ }

@@ -42,20 +42,20 @@
             <!--  INICIO DE FORMULARIO -->
                 <form action="../controllers/ClienteRegistrarController.php" method="post"> 
                 <div class="mb-3">
-                    <label for="dni" class="form-label">DNI</label>
-                    <input type="text" class="form-control" id="dni" name="dni_c">
+                    <label for="dniClientes" class="form-label">DniClientes</label>
+                    <input type="text" class="form-control" id="dniClientes" name="dniClientes_c">
                 </div>
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
+                    <label for="nombreClientes" class="form-label">NombreClientes</label>
                     <input type="text" class="form-control" id="nombre" name="nombre_c">
                 </div>
                 <div class="mb-3">
-                    <label for="apellido" class="form-label">Apellido</label>
+                    <label for="apellidoClientes" class="form-label">ApellidoClientes</label>
                     <input type="text" class="form-control" id="apellido" name="apellido_c">
                 </div>
                 <div class="mb-4 mt-3">
-                    <label for="nombre" class="form-label">Correo electronico</label>
-                    <input type="email" class="form-control" id="email" name="correo_c">
+                    <label for="celularClientes" class="form-label">CelularClientes</label>
+                    <input type="text" class="form-control" id="celularClientes" name="celularClientes_c">
                 </div>
                     <button type="submit" class="btn btn-primary">Registrar</button>
                 </form>

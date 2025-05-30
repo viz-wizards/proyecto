@@ -42,12 +42,11 @@
                 <!--  INICIO REPORTE DE CLIENTE -->
                     <table class="table table-hover" style="background:#FFFF;">
                         <tr>
-                            <th>DNI</th> 
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Correo</th>
-                            <th>Estado</th>
-                            <th>Opciones</th>
+                            <th>IdClientes</th> 
+                            <th>DniClientes</th> 
+                            <th>NombreClientes</th>
+                            <th>ApellidoClientes</th>
+                            <th>CelularClientes</th>
                         </tr>
                         <?php 
                          require_once("../models/Clientes.php");    
@@ -55,19 +54,20 @@
                           $resultado_lista = $objeto->reportes_clientes();
                           while($fila = $resultado_lista->fetch_array(MYSQLI_ASSOC)){
                             echo "<tr>";
-                            echo "<td>".$fila['dni']."</td>";
-                            echo "<td>".$fila['nombre']."</td>";
-                            echo "<td>".$fila['apellido']."</td>";
-                            echo "<td>".$fila['correo']."</td>";
-                            echo "<td>".$fila['estado']."</td>";
+                            echo "<td>".$fila['idClientes']."</td>";
+                            echo "<td>".$fila['dniClientes']."</td>";
+                            echo "<td>".$fila['nombreClientes']."</td>";
+                            echo "<td>".$fila['apellidoClientes']."</td>";
+                            echo "<td>".$fila['celularClientes']."</td>";
                             echo "<td>
                                     <button id='btnEditar' 
-                                    data-dni='$fila[dni]' 
-                                    data-name='$fila[nombre]' data-lastname='$fila[apellido]' data-correo='$fila[correo]' 
+                                    data-idClientes='$fila[idClientes]'
+                                    data-dniClientes='$fila[dniClientes]' 
+                                    data-name='$fila[nombreClientes]' data-lastname='$fila[apellidoClientes]' data-celularClientes='$fila[CelularClientes]' 
                                     class='btn bg-light-blue-active color-palette'>
                                       <i class='fa fa-fw fa-edit'></i>
                                     </button>
-                                    <button id='btnEliminar' data-dni='$fila[dni]' class='btn bg-red-active color-palette'>
+                                    <button id='btnEliminar' data-dniClientes='$fila[dniClientes]' class='btn bg-red-active color-palette'>
                                      <i class='fa fa-fw fa-trash'></i>
                                     </button>
                                   </td>";
@@ -113,23 +113,27 @@
             </div>
             <div class="modal-body text-left">
             <!--  INICIO DE FORMULARIO -->
-                <form action="#" method="post"> 
+                <form action="#" method="post">
                   <div class="mb-3">
-                      <label for="dni" class="form-label">DNI</label>
+                    <label for="idClientes" class="form-label">IdClientes</label>
+                    <input type="text" class="form-control" id="idClientes" name="idClientes">
+                  </div> 
+                  <div class="mb-3">
+                      <label for="dniClientes" class="form-label">DniClientes</label>
                       <input type="text" disabled="true" readOnly 
-                      class="form-control" id="dni" name="dni_c">
+                      class="form-control" id="dniClientes" name="dniClientes_c">
                   </div>
                   <div class="mb-3">
-                      <label for="nombre" class="form-label">Nombre</label>
+                      <label for="nombreClientes" class="form-label">NombreClientes</label>
                       <input type="text" class="form-control" id="nombre" name="nombre_c">
                   </div>
                   <div class="mb-3">
-                      <label for="apellido" class="form-label">Apellido</label>
-                      <input type="text" class="form-control" id="apellido" name="apellido_c">
+                      <label for="apellidoClientes" class="form-label">ApellidoClientes</label>
+                      <input type="text" class="form-control" id="apellidoClientes" name="apellidoClientes_c">
                   </div>
                   <div class="mb-4 mt-3">
-                      <label for="nombre" class="form-label">Correo electronico</label>
-                      <input type="email" class="form-control" id="email" name="correo_c">
+                      <label for="celularClientes" class="form-label">CelularClientes</label>
+                      <input type="text" class="form-control" id="celularClientes" name="celularClientes_c">
                   </div>
                 </form>
             <!--  FIN DE FORMULARIO-->          
